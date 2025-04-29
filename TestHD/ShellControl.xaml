@@ -1,0 +1,63 @@
+﻿<UserControl
+    x:Class="TestHD.ShellControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:TestHD.Controls"
+    xmlns:local="using:TestHD">
+
+    <Grid ColumnDefinitions="Auto,*">
+
+        <!--LATERAL BAR-->
+        <Border Grid.Column="0"
+                Background="#06325f"
+                MinWidth="116"
+                Padding="8">
+
+            <StackPanel x:Name="PART_LateralBar"
+                        Orientation="Vertical"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center"
+                        Spacing="8">
+
+                <controls:MyButton Text="Page 1"
+                                   Symbol="Admin" />
+                
+                <controls:MyButton Text="Page 2"
+                                   Symbol="ContactPresence"/>
+
+            </StackPanel>
+
+        </Border>
+
+        <!--CONTENT-->
+        <Grid x:Name="PART_Background"
+              Grid.Column="1"
+              RowDefinitions="Auto, *"
+              Background="Black">
+
+            <!--BACKGROUND IMAGE-->
+            <Image Grid.Row="0"
+                   Grid.RowSpan="2"
+                   Background="Transparent"
+                   Source="/Assets/Images/torn2.jpg"
+                   Opacity="0.2"
+                   Stretch="Uniform" />
+
+            <!--CAPTION-->
+            <TextBlock HorizontalAlignment="Center" Grid.Row="0"
+                       Text="CAPTION"
+                       FontSize="30"
+                       Foreground="White"
+                       Margin="10, 5" />
+
+            <!--CONTENT-->
+            <ContentPresenter Grid.Row="1"
+                              x:Name="PART_Content" />
+
+        </Grid>
+
+    </Grid>
+    
+</UserControl>

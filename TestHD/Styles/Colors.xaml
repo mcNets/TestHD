@@ -1,0 +1,86 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--Basic colors-->
+    <Color x:Key="OsmoNegre">#000000</Color>
+    <Color x:Key="OsmoBlanc">#ffffff</Color>
+    <Color x:Key="OsmoBlauCel">#448fcb</Color>
+    <Color x:Key="OsmoBlauFosc">#004275</Color>
+    <Color x:Key="OsmoVermell">#c1242f</Color>
+    <Color x:Key="OsmoGroc">#ffc107</Color>
+    <Color x:Key="OsmoTaronja">#d87203</Color>
+    <Color x:Key="OsmoVert">#00b228</Color>
+    <Color x:Key="OsmoGrisClar">#6c6c6c</Color>
+    <Color x:Key="OsmoGrisFosc">#1e1e1e</Color>
+
+    <!--Gradient brushes-->
+    <LinearGradientBrush x:Key="OsmoGradientBlau">
+        <GradientStop Color="#006dc1"
+                      Offset="0" />
+        <GradientStop Color="#004275"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="OsmoGradientBlauFosc">
+        <GradientStop Color="#004275"
+                      Offset="0" />
+        <GradientStop Color="#001628"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="OsmoGradientVert">
+        <GradientStop Color="#006617"
+                      Offset="0" />
+        <GradientStop Color="#00400f"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="OsmoGradientVermell">
+        <GradientStop Color="#c1242f"
+                      Offset="0" />
+        <GradientStop Color="#671319"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="OsmoGradientTaronja">
+        <GradientStop Color="#d87203"
+                      Offset="0" />
+        <GradientStop Color="#8b4901"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <!--Background brushes-->
+    <SolidColorBrush x:Key="OsmoBackgroundBrush"
+                     Color="#000000" />
+
+    <SolidColorBrush x:Key="OsmoBackgroundBrushDisconnected"
+                     Color="{StaticResource OsmoVermell}" />
+
+    <!--Text brushes-->
+    <SolidColorBrush x:Key="OsmoTextPrimaryBrush"
+                     Color="{StaticResource OsmoBlanc}" />
+
+    <SolidColorBrush x:Key="OsmoTextSecondaryBrush"
+                     Color="{StaticResource OsmoBlauCel}" />
+
+    <SolidColorBrush x:Key="OsmoBorderBrush"
+                     Color="{StaticResource OsmoGrisClar}" />
+
+    <SolidColorBrush x:Key="OsmoLedOff"
+                     Color="{StaticResource OsmoGrisFosc}" />
+
+    <!--KPI brushes-->
+    <SolidColorBrush x:Key="OsmoKPI100"
+                     Color="{StaticResource OsmoVert}" />
+
+    <SolidColorBrush x:Key="OsmoKPI85"
+                     Color="{StaticResource OsmoGroc}" />
+
+    <SolidColorBrush x:Key="OsmoKPI75"
+                     Color="{StaticResource OsmoTaronja}" />
+
+    <SolidColorBrush x:Key="OsmoKPI65"
+                     Color="{StaticResource OsmoVermell}" />
+    
+</ResourceDictionary>
