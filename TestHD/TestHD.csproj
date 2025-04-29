@@ -27,6 +27,14 @@
       ThemeService;
     </UnoFeatures>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Controls\OsmoButton.xaml.cs">
+      <DependentUpon>OsmoButton.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
    
 
 </Project>

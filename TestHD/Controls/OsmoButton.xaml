@@ -1,19 +1,19 @@
-﻿<UserControl x:Class="TestHD.Controls.MyButton"
+﻿<UserControl x:Class="TestHD.Controls.OsmoButton"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="using:TestHD.Controls"
-             x:Name="ROOT_MyButton"
-             Style="{StaticResource MyButtonStyle}">
+             x:Name="ROOT_OsmoButton"
+             Style="{StaticResource OsmoButtonStyle}">
 
     <Button x:Name="PART_Boto"
-            Background="{Binding Background, ElementName=ROOT_MyButton, Mode=OneWay}"
-            BorderBrush="{Binding BorderBrush, ElementName=ROOT_MyButton, Mode=OneWay}"
-            BorderThickness="{Binding BorderThickness, ElementName=ROOT_MyButton, Mode=OneWay}"
-            Width="{Binding Width, ElementName=ROOT_MyButton, Mode=OneWay}"
-            Height="{Binding Height, ElementName=ROOT_MyButton, Mode=OneWay}"
-            HorizontalAlignment="{Binding HorizontalAlignment, ElementName=ROOT_MyButton, Mode=OneWay}"
+            Background="{Binding Background, ElementName=ROOT_OsmoButton, Mode=OneWay}"
+            BorderBrush="{Binding BorderBrush, ElementName=ROOT_OsmoButton, Mode=OneWay}"
+            BorderThickness="{Binding BorderThickness, ElementName=ROOT_OsmoButton, Mode=OneWay}"
+            Width="{Binding Width, ElementName=ROOT_OsmoButton, Mode=OneWay}"
+            Height="{Binding Height, ElementName=ROOT_OsmoButton, Mode=OneWay}"
+            HorizontalAlignment="{Binding HorizontalAlignment, ElementName=ROOT_OsmoButton, Mode=OneWay}"
             Click="OsmoButtonClick">
 
         <StackPanel Orientation="Vertical"
@@ -24,10 +24,10 @@
             <SymbolIcon Symbol="{x:Bind Symbol, Mode=OneWay}"
                         Visibility="{x:Bind SymbolVisible, Mode=OneWay}"
                         VerticalAlignment="Center"
-                        Foreground="{Binding Foreground, ElementName=ROOT_MyButton, Mode=OneWay}" />
+                        Foreground="{Binding Foreground, ElementName=ROOT_OsmoButton, Mode=OneWay}" />
 
             <TextBlock Style="{StaticResource OsmoTextHeader}"
-                       Foreground="{Binding Foreground, ElementName=ROOT_MyButton, Mode=OneWay}"
+                       Foreground="{Binding Foreground, ElementName=ROOT_OsmoButton, Mode=OneWay}"
                        Visibility="{x:Bind TextVisible, Mode=OneWay}"
                        Text="{x:Bind Text, Mode=OneWay}" />
 

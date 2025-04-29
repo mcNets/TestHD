@@ -11,7 +11,7 @@
 
         <!--LATERAL BAR-->
         <Border Grid.Column="0"
-                Background="#06325f"
+                Background="{StaticResource OsmoGradientBlauFosc}"
                 MinWidth="116"
                 Padding="8">
 
@@ -21,10 +21,10 @@
                         HorizontalAlignment="Center"
                         Spacing="8">
 
-                <controls:MyButton Text="Page 1"
+                <controls:OsmoButton Text="Page 1"
                                    Symbol="Admin" />
                 
-                <controls:MyButton Text="Page 2"
+                <controls:OsmoButton Text="Page 2"
                                    Symbol="ContactPresence"/>
 
             </StackPanel>

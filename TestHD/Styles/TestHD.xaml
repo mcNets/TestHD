@@ -5,30 +5,102 @@
     xmlns:core="using:TestHD.Core">
 
     <!--Fonts-->
-    <x:Double x:Key="MyFontGiant">80</x:Double>
-    <x:Double x:Key="MyFontExtraBig">50</x:Double>
-    <x:Double x:Key="MyFontBig">34</x:Double>
-    <x:Double x:Key="MyFont">24</x:Double>
-    <x:Double x:Key="MyFontSmall">20</x:Double>
-    <x:Double x:Key="MyFontExtraSmall">14</x:Double>
+    <x:Double x:Key="OsmoFontGiant">80</x:Double>
+    <x:Double x:Key="OsmoFontExtraBig">50</x:Double>
+    <x:Double x:Key="OsmoFontBig">34</x:Double>
+    <x:Double x:Key="OsmoFont">24</x:Double>
+    <x:Double x:Key="OsmoFontSmall">20</x:Double>
+    <x:Double x:Key="OsmoFontExtraSmall">14</x:Double>
 
     <!--Spacing & decoration-->
-    <CornerRadius x:Key="MyCornerRadius">5</CornerRadius>
-    <Thickness x:Key="MyPadding">8</Thickness>
-    <Thickness x:Key="MyPaddingSmall">5</Thickness>
-    <Thickness x:Key="MyBorderThickness">1</Thickness>
+    <CornerRadius x:Key="OsmoCornerRadius">5</CornerRadius>
+    <Thickness x:Key="OsmoPadding">8</Thickness>
+    <Thickness x:Key="OsmoPaddingSmall">5</Thickness>
+    <Thickness x:Key="OsmoBorderThickness">1</Thickness>
 
-    <!--MyButton-->
-    <Style x:Key="MyButtonStyle"
-           TargetType="controls:MyButton">
+    <!--Border-->
+    <Style x:Key="OsmoBorder"
+           TargetType="Border">
+        <Setter Property="BorderBrush"
+                Value="{StaticResource OsmoBorderBrush}" />
+        <Setter Property="BorderThickness"
+                Value="{StaticResource OsmoBorderThickness}" />
+        <Setter Property="Padding"
+                Value="{StaticResource OsmoPadding}" />
+        <Setter Property="CornerRadius"
+                Value="{StaticResource OsmoCornerRadius}" />
+    </Style>
+
+    <!--
+TextBlock
+-->
+    <Style x:Key="OsmoText"
+           TargetType="TextBlock">
         <Setter Property="FontSize"
-                Value="{StaticResource MyFontExtraSmall}" />
+                Value="{StaticResource OsmoFont}" />
+        <Setter Property="Foreground"
+                Value="{StaticResource OsmoTextPrimaryBrush}" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="HorizontalAlignment"
+                Value="Center" />
+    </Style>
+
+    <!--
+TextBlockAlter
+-->
+    <Style x:Key="OsmoTextAltern"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource OsmoText}">
+        <Setter Property="Foreground"
+                Value="{StaticResource OsmoTextSecondaryBrush}" />
+    </Style>
+
+    <!--
+TextBlockHeader
+-->
+    <Style x:Key="OsmoTextHeader"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource OsmoText}">
+        <Setter Property="FontSize"
+                Value="{StaticResource OsmoFontSmall}" />
+    </Style>
+
+    <!--TextBlockInfo-->
+    <Style x:Key="OsmoTextInfo"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource OsmoText}">
+        <Setter Property="FontSize"
+                Value="{StaticResource OsmoFontBig}" />
+    </Style>
+
+    <!--TextBlockTitol-->
+    <Style x:Key="OsmoTextTitol"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource OsmoText}">
+        <Setter Property="FontSize"
+                Value="{StaticResource OsmoFontExtraBig}" />
+    </Style>
+
+    <!--TextBlockComent-->
+    <Style x:Key="OsmoTextComent"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource OsmoText}">
+        <Setter Property="FontSize"
+                Value="{StaticResource OsmoFontExtraSmall}" />
+    </Style>
+    
+    <!--OsmoButton-->
+    <Style x:Key="OsmoButtonStyle"
+           TargetType="controls:OsmoButton">
+        <Setter Property="FontSize"
+                Value="{StaticResource OsmoFontExtraSmall}" />
         <Setter Property="Width"
                 Value="130" />
         <Setter Property="Height"
                 Value="80" />
         <Setter Property="CornerRadius"
-                Value="{StaticResource MyCornerRadius}" />
+                Value="{StaticResource OsmoCornerRadius}" />
         <Setter Property="Foreground"
                 Value="{StaticResource OsmoTextPrimaryBrush}" />
         <Setter Property="Background"
@@ -36,7 +108,7 @@
         <Setter Property="BorderBrush"
                 Value="{StaticResource OsmoBorderBrush}" />
         <Setter Property="BorderThickness"
-                Value="{StaticResource MyBorderThickness}" />
+                Value="{StaticResource OsmoBorderThickness}" />
         <Setter Property="HorizontalAlignment"
                 Value="Center" />
     </Style>
