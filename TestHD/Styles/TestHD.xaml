@@ -18,6 +18,14 @@
     <Thickness x:Key="OsmoPaddingSmall">5</Thickness>
     <Thickness x:Key="OsmoBorderThickness">1</Thickness>
 
+    <!--Imatges-->
+    <BitmapImage x:Key="ImgBckg1"
+        UriSource="Assets/Images/background1.jpg" />
+    <BitmapImage x:Key="ImgBckg2"
+        UriSource="Assets/Images/background2.jpg" />
+    <BitmapImage x:Key="ImgBckg3"
+        UriSource="Assets/Images/background3.jpg" />
+
     <!--Border-->
     <Style x:Key="OsmoBorder"
            TargetType="Border">
@@ -31,9 +39,7 @@
                 Value="{StaticResource OsmoCornerRadius}" />
     </Style>
 
-    <!--
-TextBlock
--->
+    <!--TextBlock-->
     <Style x:Key="OsmoText"
            TargetType="TextBlock">
         <Setter Property="FontSize"
@@ -46,9 +52,7 @@ TextBlock
                 Value="Center" />
     </Style>
 
-    <!--
-TextBlockAlter
--->
+    <!--TextBlockAlter-->
     <Style x:Key="OsmoTextAltern"
            TargetType="TextBlock"
            BasedOn="{StaticResource OsmoText}">
@@ -56,9 +60,7 @@ TextBlockAlter
                 Value="{StaticResource OsmoTextSecondaryBrush}" />
     </Style>
 
-    <!--
-TextBlockHeader
--->
+    <!--TextBlockHeader-->
     <Style x:Key="OsmoTextHeader"
            TargetType="TextBlock"
            BasedOn="{StaticResource OsmoText}">
